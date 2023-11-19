@@ -10,11 +10,11 @@ let questions = [
     {
         numb: 2,
         question: 'Выберите неправильное утверждение.Имя существительное…',
-        answer: 'не может склоняться как прилагательное ',
+        answer: 'не может склоняться как прилагательное',
         options: [
-            'не может склоняться как прилагательное ',
+            'не может склоняться как прилагательное',
             'может иметь 3 рода',
-            'может быть любой частью предложения ',
+            'может быть любой частью предложения',
         ],
         theme: 'Тебе стоит повторить имена существительные',
     },
@@ -287,18 +287,18 @@ function showResult() {
     quiz_box.classList.remove('activeQuiz') //hide quiz box
     result_box.classList.add('activeResult') //show result box
     const scoreText = result_box.querySelector('.score_text')
-    if (userScore > 3) {
+    if (userScore >= 8) {
         // if user scored more than 3
         //creating a new span tag and passing the user score number and total question number
         let scoreTag = `Отлично!, у тебя ${userScore} из ${questions.length}`
         scoreText.innerHTML = scoreTag //adding new span tag inside score_Text
-    } else if (userScore > 1) {
+    } else if (userScore >= 6) {
         // if user scored more than 1
-        let scoreTag = `неплохо!, у тебя ${userScore} из ${questions.length}`
+        let scoreTag = `Неплохо!, у тебя ${userScore} из ${questions.length}`
         scoreText.innerHTML = scoreTag
     } else {
         // if user scored less than 1
-        let scoreTag = `печалька:(, у тебя только ${userScore} из ${questions.length}`
+        let scoreTag = `Печалька:(, у тебя только ${userScore} из ${questions.length}`
         scoreText.innerHTML = scoreTag
     }
 }
