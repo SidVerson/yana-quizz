@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест по русскому языку</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAweome CDN Link for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+    <!-- start Quiz button -->
+    <div class="start_btn"><button>Начать тест</button></div>
+
+    <!-- Info Box -->
+    <div class="info_box">
+        <div class="info-title"><span>Правила теста</span></div>
+        <div class="info-list">
+            <div class="info">1. У тебя будет только <span>15 секунд</span> на вопрос</div>
+            <div class="info">2. Перевыбрать вопрос нельзя</div>
+            <div class="info">3. По истечению времени выбор сделать нельзя</div>
+            <div class="info">4. Нельзя перезапустить тест во время выполнения</div>
+            <div class="info">5. Ты будешь получать по баллу за каждый правильный ответ</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Выйти</button>
+            <button class="restart">Продолжить</button>
+        </div>
+    </div>
+
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">Тест Яны</div>
+            <div class="timer">
+                <div class="time_left_txt">Осталось</div>
+                <div class="timer_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+                <!-- Here I've inserted question from JavaScript -->
+            </div>
+            <div class="option_list">
+                <!-- Here I've inserted options from JavaScript -->
+            </div>
+        </section>
+
+        <!-- footer of Quiz Box -->
+        <footer>
+            <div class="footer_buttons">
+                <div class="total_que">
+                    <!-- Here I've inserted Question Count Number from JavaScript -->
+                </div>
+                <button class="next_btn">Следующий вопрос</button>
+            </div>
+            <div class="themeToLearn noDisplay"></div>
+        </footer>
+    </div>
+
+    <!-- Result Box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-graduation-cap"></i>
+        </div>
+        <div class="complete_text">Тест закончен</div>
+        <div class="score_text">
+            <!-- Here I've inserted Score Result from JavaScript -->
+        </div>
+        <div class="buttons">
+            <button class="restart">Перепройти</button>
+            <button class="quit">Выйти</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
