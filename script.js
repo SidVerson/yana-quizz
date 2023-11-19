@@ -290,11 +290,11 @@ function showResult() {
     if (userScore >= 8) {
         // if user scored more than 3
         //creating a new span tag and passing the user score number and total question number
-        let scoreTag = `Отлично!, у тебя ${userScore} из ${questions.length}`
+        let scoreTag = `Отлично! У тебя ${userScore} из ${questions.length}`
         scoreText.innerHTML = scoreTag //adding new span tag inside score_Text
     } else if (userScore >= 6) {
         // if user scored more than 1
-        let scoreTag = `Неплохо!, у тебя ${userScore} из ${questions.length}`
+        let scoreTag = `Неплохо! У тебя ${userScore} из ${questions.length}`
         scoreText.innerHTML = scoreTag
     } else {
         // if user scored less than 1
